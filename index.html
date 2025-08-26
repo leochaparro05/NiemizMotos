@@ -12,30 +12,55 @@
     <title>Niemiz Motos</title>
 </head>
 
+
 <body class="bg-gradient-to-br from-gray-900 via-slate-700 to-blue-900 font-sans">
 
-    <!-- Header -->
+    <!-- Header Responsive -->
     <header class="bg-gradient-to-r from-blue-800 via-cyan-500 to-slate-400 text-white shadow-lg">
         <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
             <h1 class="text-3xl font-extrabold tracking-wide text-slate-100 drop-shadow-lg">Niemiz Motos</h1>
-        <nav class="space-x-6">
-    <a href="#" class="hover:text-cyan-300 transition-all duration-500">Inicio</a>
-    <a href="#" class="hover:text-cyan-300 transition-all duration-500">Modelos</a>
-    <a href="#" class="hover:text-cyan-300 transition-all duration-500">Servicios</a>
-    <a href="#" class="hover:text-cyan-300 transition-all duration-500">Contacto</a>
-</nav>
+            <!-- Desktop Menu -->
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#" class="hover:text-cyan-300 transition-all duration-500">Inicio</a>
+                <a href="#" class="hover:text-cyan-300 transition-all duration-500">Modelos</a>
+                <a href="#" class="hover:text-cyan-300 transition-all duration-500">Servicios</a>
+                <a href="#" class="hover:text-cyan-300 transition-all duration-500">Contacto</a>
+            </nav>
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 border rounded text-slate-100 border-slate-300 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="md:hidden hidden flex-col bg-blue-900/95 px-6 py-4 space-y-2">
+            <a href="#" class="block hover:text-cyan-300 transition-all duration-500">Inicio</a>
+            <a href="#" class="block hover:text-cyan-300 transition-all duration-500">Modelos</a>
+            <a href="#" class="block hover:text-cyan-300 transition-all duration-500">Servicios</a>
+            <a href="#" class="block hover:text-cyan-300 transition-all duration-500">Contacto</a>
+        </nav>
+        <script>
+            const btn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section Responsive -->
     <section class="relative bg-gray-900 text-white">
-        <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?w=1600" 
-             alt="Fondo de teclado" 
-             class="w-full h-[500px] object-cover opacity-60">
-        <div class="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-b from-blue-900/80 via-cyan-700/60 to-transparent">
-            <h2 class="text-6xl font-extrabold mb-4 text-slate-100 drop-shadow-lg">Estilo y Potencia</h2>
-            <p class="text-xl mb-6 text-cyan-200 font-medium">Encuentra la moto de tus sueños hoy mismo</p>
-<a href="#modelos" class="bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-500">Ver Modelos</a>
+        <div class="relative w-full h-[300px] md:h-[500px]">
+            <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?w=1600"
+                alt="Fondo de teclado"
+                class="absolute inset-0 w-full h-full object-cover opacity-60" />
+            <div class="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-b from-blue-900/80 via-cyan-700/60 to-transparent px-4">
+                <h2 class="text-3xl md:text-6xl font-extrabold mb-4 text-slate-100 drop-shadow-lg text-center">Estilo y Potencia</h2>
+                <p class="text-base md:text-xl mb-6 text-cyan-200 font-medium text-center">Encuentra la moto de tus sueños hoy mismo</p>
+                <a href="#modelos" class="bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-500">Ver Modelos</a>
+            </div>
         </div>
     </section>
 
