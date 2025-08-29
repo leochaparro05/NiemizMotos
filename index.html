@@ -15,8 +15,8 @@
 
 <body class="bg-gradient-to-br from-gray-900 via-slate-700 to-blue-900 font-sans">
 
-    <!-- Header Responsive -->
-    <header class="bg-gradient-to-r from-blue-800 via-cyan-500 to-slate-400 text-white shadow-lg">
+       <!-- Header Responsive -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-800 via-cyan-500 to-slate-400 text-white shadow-lg">
         <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
             <h1 class="text-3xl font-extrabold tracking-wide text-slate-100 drop-shadow-lg">Niemiz Motos</h1>
             <!-- Desktop Menu -->
@@ -51,80 +51,248 @@
     </header>
 
     <!-- Hero Section Responsive -->
-    <section class="relative bg-gray-900 text-white">
-        <div class="relative w-full h-[300px] md:h-[500px]">
-            <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?w=1600"
-                alt="Fondo de teclado"
-                class="absolute inset-0 w-full h-full object-cover opacity-60" />
-            <div class="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-b from-blue-900/80 via-cyan-700/60 to-transparent px-4">
-                <h2 class="text-3xl md:text-6xl font-extrabold mb-4 text-slate-100 drop-shadow-lg text-center">Estilo y Potencia</h2>
-                <p class="text-base md:text-xl mb-6 text-cyan-200 font-medium text-center">Encuentra la moto de tus sueños hoy mismo</p>
-                <a href="#modelos" class="bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-500">Ver Modelos</a>
+   <section class="relative bg-gray-900 text-white">
+    <div class="relative w-full h-[300px] md:h-[500px]">
+        <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?w=1600"
+            alt="Fondo de teclado"
+            class="absolute inset-0 w-full h-full object-cover opacity-60" />
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-b from-blue-900/80 via-cyan-700/60 to-transparent px-4">
+            <h2 class="text-3xl md:text-6xl font-extrabold mb-4 text-slate-100 drop-shadow-lg text-center">Estilo y Potencia</h2>
+            <p class="text-base md:text-xl mb-6 text-cyan-200 font-medium text-center">Encuentra la moto de tus sueños hoy mismo</p>
+            <div class="flex flex-col md:flex-row gap-4">
+                <a href="#modelos" class="bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-500 text-center">Ver modelos Bajaj</a>
+                <a href="#corven" class="bg-gradient-to-r from-slate-400 via-cyan-500 to-blue-700 hover:from-blue-900 hover:to-cyan-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl text-lg font-bold shadow-lg transition-all duration-500 text-center">Ver modelos Corven</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <main>
 <main>
     <!-- Sección Bajaj -->
-    <section id="bajaj" class="max-w-6xl mx-auto py-16 px-4">
+    
+   <section id="modelos" class="relative max-w-6xl mx-auto py-16 px-4">
+    <!-- Imagen de fondo para Bajaj, estilo hero -->
+    <div class="absolute inset-0 w-full h-full">
+        <img src="img/DominarVerde.jpg" alt="dominar Verde"
+            class="w-full h-full object-cover opacity-30" />
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-900/70 via-cyan-700/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10">
         <h3 class="text-4xl font-extrabold text-center mb-10 text-blue-300 drop-shadow-lg">Modelos Bajaj</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Fila 1 -->
+            <!-- Dominar 400 -->
             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
-                <img src="https://bajaj.com.ar/wp-content/uploads/2023/03/rouser-ns200-abs-azul.png" alt="Bajaj Rouser NS200" class="w-full h-48 object-cover">
+                <img src="" alt="BAJAJ DOMINAR 400" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h4 class="text-2xl font-bold text-cyan-300">Rouser NS200</h4>
+                    <h4 class="text-2xl font-bold text-cyan-300">Dominar 400</h4>
                     <p class="text-gray-300 mt-2">Deportiva, potente y con ABS para máxima seguridad.</p>
-                    <button class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">Ver más</button>
+                    <button
+                        onclick="window.open('Dominar400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
                 </div>
             </div>
+            <!-- Dominar 250 -->
             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
-                <img src="https://bajaj.com.ar/wp-content/uploads/2023/03/rouser-ns160-azul.png" alt="Bajaj Rouser NS160" class="w-full h-48 object-cover">
+                <img src="" alt="BAJAJ DOMINAR 250" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h4 class="text-2xl font-bold text-cyan-300">Rouser NS160</h4>
+                    <h4 class="text-2xl font-bold text-cyan-300">Dominar 250</h4>
                     <p class="text-gray-300 mt-2">Versatilidad y eficiencia para el día a día.</p>
-                    <button class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">Ver más</button>
+                    <button
+                        onclick="window.open('Dominar400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
                 </div>
             </div>
+            <!-- Rouser 400 (nuevo div agregado) -->
             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
-                <img src="https://bajaj.com.ar/wp-content/uploads/2023/03/rouser-180-azul.png" alt="Bajaj Rouser 180" class="w-full h-48 object-cover">
+                <img src="" alt="ROUSER 400" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h4 class="text-2xl font-bold text-cyan-300">Rouser 180</h4>
+                    <h4 class="text-2xl font-bold text-cyan-300">Rouser 400</h4>
+                    <p class="text-gray-300 mt-2">Potencia superior y diseño agresivo para los más exigentes.</p>
+                    <button
+                        onclick="window.open('Rouser400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <!-- Fila 2 -->
+            <!-- Rouser N250 -->
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="ROUSER N250" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Rouser N250</h4>
                     <p class="text-gray-300 mt-2">Equilibrio perfecto entre potencia y confort.</p>
                     <button class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">Ver más</button>
                 </div>
             </div>
+            <!-- Rouser NS200 -->
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Bajaj Rouser NS200" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Rouser NS200</h4>
+                    <p class="text-gray-300 mt-2">Deportiva, potente y con ABS para máxima seguridad.</p>
+                    <button
+                        onclick="window.open('Dominar400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <!-- Rouser NS160 -->
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="ROUSER NS160" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Rouser NS160</h4>
+                    <p class="text-gray-300 mt-2">Versatilidad y eficiencia para el día a día.</p>
+                    <button
+                        onclick="window.open('Dominar400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <!-- Fila 3 -->
+            <!-- Rouser P150 -->
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="ROUSER P150" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">ROUSER P150</h4>
+                    <p class="text-gray-300 mt-2">Equilibrio perfecto entre potencia y confort.</p>
+                    <button
+                        onclick="window.open('Dominar400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <!-- Boxer 150 AT -->
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="BOXER 150 AT" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Boxer 150 AT</h4>
+                    <p class="text-gray-300 mt-2">Equilibrio perfecto entre potencia y confort.</p>
+                    <button
+                        onclick="window.open('Dominar400.html', '_blank')"
+                        class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+                        Ver más
+                    </button>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección Corven -->
-    <section id="corven" class="max-w-6xl mx-auto py-16 px-4">
-        <h3 class="text-4xl font-extrabold text-center mb-10 text-blue-300 drop-shadow-lg">Modelos Corven</h3>
+    <section id="corven" class="relative max-w-6xl mx-auto py-16 px-4">
+    <!-- Fondo moderno con gradiente angular -->
+    <div class="absolute inset-0 w-full h-full bg-gradient-to-tr from-slate-200 via-cyan-300 to-blue-500 opacity-30"></div>
+    <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-gray-900/60 via-blue-900/40 to-transparent"></div>
+    <div class="relative z-10">
+        <h3 class="text-4xl font-extrabold text-center mb-10 text-blue-400 drop-shadow-lg">Modelos Corven</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+           
             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
-                <img src="https://corvenmotos.com.ar/wp-content/uploads/2022/06/energy-110-rt.png" alt="Corven Energy 110 RT" class="w-full h-48 object-cover">
+                <img src="" alt="Corven Energy 110 RT" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h4 class="text-2xl font-bold text-cyan-300">Energy 110 RT</h4>
                     <p class="text-gray-300 mt-2">Ideal para ciudad, económica y confiable.</p>
-                    <button class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">Ver más</button>
-                </div>
+                    <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button></div>
             </div>
             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
-                <img src="https://corvenmotos.com.ar/wp-content/uploads/2022/06/triax-150-r2.png" alt="Corven Triax 150 R2" class="w-full h-48 object-cover">
+                <img src="" alt="Corven Energy 110 AD" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h4 class="text-2xl font-bold text-cyan-300">Triax 150 R2</h4>
+                    <h4 class="text-2xl font-bold text-cyan-300">Energy 110 AD</h4>
                     <p class="text-gray-300 mt-2">Robusta y lista para cualquier terreno.</p>
-                    <button class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">Ver más</button>
-                </div>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button></div>
             </div>
             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
-                <img src="https://corvenmotos.com.ar/wp-content/uploads/2022/06/indiana-256.png" alt="Corven Indiana 256" class="w-full h-48 object-cover">
+                <img src="" alt="Tunning 110" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h4 class="text-2xl font-bold text-cyan-300">Indiana 256</h4>
+                    <h4 class="text-2xl font-bold text-cyan-300">Tunning 110</h4>
                     <p class="text-gray-300 mt-2">Estilo custom, cómoda y potente.</p>
                     <button class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">Ver más</button>
                 </div>
+            </div>
+             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Milano 150" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Milano 150</h4>
+                    <p class="text-gray-300 mt-2">Ideal para ciudad, económica y confiable.</p>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button> </div>
+            </div>
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Hunter 150 RT" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Hunter 150 RT</h4>
+                    <p class="text-gray-300 mt-2">Robusta y lista para cualquier terreno.</p>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button>   </div>
+            </div>
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Avenger 220" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Avenger 220</h4>
+                    <p class="text-gray-300 mt-2">Estilo custom, cómoda y potente.</p>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button> </div>
+            </div>
+             <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Triax 150 R3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Triax 150 R3</h4>
+                    <p class="text-gray-300 mt-2">Ideal para ciudad, económica y confiable.</p>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button>  </div>
+            </div>
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Corven Triax 200 R3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Triax 200 R3</h4>
+                    <p class="text-gray-300 mt-2">Robusta y lista para cualquier terreno.</p>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button>  </div>
+            </div>
+            <div class="bg-gradient-to-br from-slate-800 via-gray-700 to-blue-900 shadow-xl rounded-xl overflow-hidden border border-slate-500">
+                <img src="" alt="Corven Triax 250 R3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-2xl font-bold text-cyan-300">Triax 250 R3</h4>
+                    <p class="text-gray-300 mt-2">Estilo custom, cómoda y potente.</p>
+                   <button
+            onclick="window.open('Dominar400.html', '_blank')"
+            class="mt-4 w-full bg-gradient-to-r from-blue-700 via-cyan-500 to-slate-400 hover:from-cyan-600 hover:to-blue-900 text-white py-2 rounded-lg font-semibold shadow transition-all duration-500">
+            Ver más
+        </button></div>
             </div>
         </div>
     </section>
